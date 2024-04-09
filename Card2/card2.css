@@ -1,0 +1,31 @@
+header:first-child {
+    border: 1px solid black;
+    width: 440px;
+}
+p {
+    padding-left: 2%;
+    font-weight: 600;
+}
+h2 {
+    padding-left: 2%;  
+}
+
+
+p.item {
+   border: 1px solid black;
+   width: 430px;
+   margin:0%;
+   padding-left: 2%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+   font-weight: 600;
+}
+
+footer {
+    border: 1px solid black;
+    width: 430px;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: 600;
+ }
