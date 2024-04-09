@@ -1,0 +1,50 @@
+table,
+td,
+th
+{
+	border:1px solid #263238;
+	border-collapse:collapse;
+    width: 50%;
+}
+
+caption
+{
+	font-weight: bold;
+    font-size: 18px;
+	color: #263238;
+    margin: 5px;
+}
+
+th {
+    background-color: #455a64;
+    color: white;
+    font-weight: 700;
+}
+
+tr {
+    background-color: #eceff1;
+}
+
+tr.alternate {
+    background-color: #b0bec5;
+}
+
+tfoot tr {
+    background-color: #78909c;
+    font-weight: 800;
+    
+}
+
+td.number{
+    text-align: right;
+}
+
+td.colore1{
+    color:#003300;
+    text-align: right;
+}
+
+td.colore2{
+    color: #7f0000;
+    text-align: right;
+}
