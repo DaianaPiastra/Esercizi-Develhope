@@ -1,0 +1,72 @@
+div {
+    display: inline-block;
+}
+
+nav {
+    display:inline-block;
+    background-color: #282A35;
+    margin: 0;
+    padding: 8px;
+    color: aliceblue;
+    max-height: 80px;
+}
+
+.navbar {
+    display:inline-block;
+    background-color: #282A35;
+    margin: 0;
+    padding: 8px;
+    color: aliceblue;
+}
+ul li {
+    display: inline;
+    margin: 5px;
+    padding: 0;
+    color: gray;
+}
+
+ul li:first-child {
+    color: aliceblue;
+}
+
+
+
+.disabled {
+    background-color: #282A35;
+    margin: 0;
+    padding: 8px ;
+}
+
+select {
+    background-color: #282A35;
+    margin: 0;
+    padding: 8px;
+    color: gray;
+    border: none;
+}
+
+ .disabled {
+    background-color: #282A35;
+    margin: 0 ;
+    padding: 8px;
+    color: rgb(77, 76, 76);
+    border: none 
+}
+
+input {
+    display:inline-block;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    color: gray;
+
+}
+
+.submit {
+    background-color: #282A35;
+    display:inline-block;
+    margin: 0;
+    padding: 8px;
+    color: green;
+    border:1px solid green;
+} 

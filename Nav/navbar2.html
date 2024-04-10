@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav>
+            <!-- la navbar sembra divisa a destra e sinistra quindi creo div left e div right -->
+            <div class="left">
+                <!-- dentro div left creo un div con elenco non ordinato e secondo div con menù a tendina-->
+                <div class="navbar">
+                    <h1>Navbar</h1>
+                </div>
+                <div class="lista">
+                   <ul>
+                    <li>Home</li>
+                    <li>link</li>
+                  </ul> 
+                </div>
+               <!-- menù a tendina -->
+               <div class="dropdown">
+                    <select name="dropdown" id="dropdown">
+                        <option value="dropdown">Dropdown</option>
+                        <option value="contatti"><a href="#">Contatti</a></option>
+                        <option value=""><a href="#">Chi siamo</a></option>
+                    </select>
+                </div> 
+                <div >
+                    <button class="disabled"disabled="disabled">Disabled</button>
+                </div>
+           </div>  
+            <!-- div right con barra di ricerca -->
+           <div class="right">
+              <label for="search"></label>
+              <input type="text" id="search" name="search" value="Search">
+              <button class="submit" type="submit">Search</button>
+           </div> 
+    </nav>
+</body>
+</html>
