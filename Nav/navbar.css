@@ -1,9 +1,6 @@
-div {
-    display: inline-block;
-}
 
 nav {
-    display:inline-block;
+    display:flex;
     background-color: #282A35;
     margin: 0;
     padding: 8px;
@@ -11,9 +8,13 @@ nav {
     max-height: 80px;
 }
 
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
-    display:inline-block;
-    background-color: #282A35;
     margin: 0;
     padding: 8px;
     color: aliceblue;
@@ -54,7 +55,6 @@ select {
 }
 
 input {
-    display:inline-block;
     background-color: white;
     margin: 0;
     padding: 10px;
@@ -64,9 +64,31 @@ input {
 
 .submit {
     background-color: #282A35;
-    display:inline-block;
     margin: 0;
     padding: 8px;
     color: green;
     border:1px solid green;
 } 
+
+.burgermenu {
+    display: none;
+}
+
+
+@media  screen and (max-width: 767px) {
+    .burgermenu {
+        display: flex;
+        width: 20px;
+        align-items: center;
+        padding-right: 20px;
+    }
+    .dropdown, .right , .button, .lista {
+        display: none;
+    }
+    
+    .left {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
