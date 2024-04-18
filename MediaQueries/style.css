@@ -1,0 +1,103 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+
+}
+
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 50%;
+  }
+
+
+  .burgermenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .img {
+    width: 100%;
+  }
+
+  .img > img {
+    object-fit: cover;
+    height: 200px;
+  }
+
+
+
+  .bar {
+    display: flex;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+  display: flex;
+  gap: 10px
+}
+
+.data {
+    color: rgb(205, 207, 209);
+    font-size: small;
+}
+
+.namedata {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background:  linear-gradient(to bottom , rgb(132, 130, 130), rgb(240, 237, 237));;
+    border: 1px solid rgb(245, 243, 243);
+    border-radius: 1rem;
+}
+
+
+.loremipsum {
+  padding: 0 10px 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+    display: flex;
+    padding-left: 20px;
+    gap: 5px;
+  }
+
+  
+
+
+  @media screen and (max-width: 768px) {
+    .conteiner {
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+  }
