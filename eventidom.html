@@ -1,0 +1,40 @@
+<!-- Crea uno script che:
+Al click del bottone inserisca la modalità dark -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .theme {
+        background-color: black;
+        color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Dark Mode</h1>
+    <div>
+      <button class="btn">Dark Mode</button>
+    </div>
+    <script>
+        const html= document.documentElement;
+        console.log(html);
+        
+        const button = document.getElementsByClassName("btn") 
+        
+        button[0].addEventListener('click', function () {
+            
+            document.body.classList.add("theme")
+            
+        })
+    //    il metodo getElementsByClassName ritorna un array quindi ho dovuto specificare a quale elemento 
+    //    dovevo riferirmi, non so se era questo che richiedeva l'esercizio, altrimenti avrei potuto aggiungere un forEach
+    //    oppure farlo tramite l'aggiunzione dell'Id e quindi tramite getElementById
+    </script>
+  </body>
+</html>
