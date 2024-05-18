@@ -1,10 +1,10 @@
 import { useState } from "react"
 
-export function Login() {
+export function Login({onLogin}) {
    const [data, setData]= useState({
         userName:'',
         passWord:'',
-        session: false
+        remember: false
    })
 
    function handleInputChange(event) {
@@ -21,16 +21,40 @@ export function Login() {
       })
    }
 
+   function handleLoginClick(event) {
+
+     onLogin(data)
+   }
+
+   function handleResetForm() {
+    setData({
+        userName:'',
+        passWord:'',
+        remember: false
+    })
+    
+   }
+   
+   function handleOnSubmitForm(event) {
+    event.preventDefault()
+    console.log(data)
+   }
+   
+
+
+
 
     return (
-        <div>
+        <form onSubmit={handleOnSubmitForm}>
             <input name="username" type="text" value={data.userName} onChange={handleInputChange} placeholder="UserName"/>
             <input name="password" type="password" value={data.passWord}  onChange={handleInputChange} placeholder="PassWord"/>
             <label htmlFor="">
                Remember  
-              <input type="checkbox" name="checkbox" checked={data.session} />
+              <input type="checkbox" name="remember" checked={data.session} />
             </label>
-           
-        </div>
+            <button onClick={handleLoginClick} disabled={!data.passWord || !data.userName}>Login</button>
+            <button onClick={handleResetForm}>Reset</button>
+            <pre>{JSON.stringify(data, null, 2)}</pre>
+        </form>
     )
 }
