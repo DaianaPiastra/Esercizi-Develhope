@@ -1,0 +1,22 @@
+.app {
+    padding: 20px;
+    margin: 20px;
+    border: solid 1px red;
+}
+
+.welcome {
+    border: 5px solid gray;
+    background-color: white;
+    color:rgb(28, 28, 69) ;
+    width: 200px;
+}
+
+.scritta_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app_content_hidden {
+    display: none;
+}
