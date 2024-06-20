@@ -1,0 +1,7 @@
+ALTER TABLE Books
+ADD COLUMN publisher TEXT,
+ADD COLUMN num_pages INTEGER;
+
+
+
+
