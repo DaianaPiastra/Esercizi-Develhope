@@ -5,9 +5,10 @@ const server= createServer((req, res)=> {
 
     res.statusCode = 200;
 
-    res.setHeader('Content-type', 'text/html');
+    res.setHeader('Content-type', 'application/json');
+    const jsonRes =  JSON.stringify({body: { location: "Mars" }})
 
-    res.end("<html><body><h1>This page was written by Daiana!</h1></body></html>")
+    res.end(jsonRes)
 })
 
 server.listen(3000, ()=> {
