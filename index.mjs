@@ -35,12 +35,27 @@ app.get('/api/planets/:id', (req, res) => {
 });
 
 app.post('/api/planets', (req, res) => {
-  const {id, name}= res.body
+  const {id, name}= req.body
   const newPlanet= {id, name}
   planets= [...planets, newPlanet]
+  console.log(planets)
   res.status(201).json({msg :'the planet was created!'})
 })
 
+app.put('/api/planets', (req, res) =>{
+  const {id}= req.params
+  const {name}= req.body
+  planets= planets.map(p => p.id === id? {...p, name}: p)
+  console.log(planets)
+  res.status(200).json({msg:'The planet was updated!'})
+})
+
+app.delete('/api/planets/:id', (req, res) =>{
+  const {id}= req.params
+  planets= planets.filter(p=> p.id !== id)
+  console.log(planets)
+  res.status(200).json({msg:'The planet was deleted!'})
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
